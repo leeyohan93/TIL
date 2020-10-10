@@ -33,6 +33,6 @@
      `FileStore fs = Files.getFileStore(path)`
     * newType : newInstance와 같으나 생성할 클래스가 아닌 다른 클래스에 팩터리 메서드를 정의할때 쓴다.
     * type    : getType과 newType의 간결한 버전
-    * 핵심 : 정적 팩터리 메서드와 public 생성자는 각자의 쓰임새가 있으니 상대적인 장단점을 이해하고 사용하자.
+  * 핵심 : 정적 팩터리 메서드와 public 생성자는 각자의 쓰임새가 있으니 상대적인 장단점을 이해하고 사용하자.
     그렇다고 하더라도 정적 팩터리를 사용함에 장점이 많다.
     
