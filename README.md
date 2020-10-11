@@ -1,5 +1,8 @@
 # Today I Learned :) (TIL)
 
+## Java
+ * Effective java(https://github.com/leeyohan93/TIL/blob/master/java/Effective-java.md)
+
 ## Spring
 * JPA
   * [AttributeConverter](https://github.com/leeyohan93/TIL/blob/master/jpa/attribute-conveter/readme.md)
