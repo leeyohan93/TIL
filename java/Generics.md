@@ -127,3 +127,5 @@
 Box<? extends Object> wBox = (Box<? extends Object) new Box<String>();  // OK 형변환 생략 가능.  
 - 지네릭 타입은 컴파일 후 모두 제거된다 → 하위 버전과의 호환성 때문.  
 지네릭 타입은 제거되기 때문에 각 필요한 부분에 형변환 코드가 추가 된다.
+
+출처 - 자바의 정석
