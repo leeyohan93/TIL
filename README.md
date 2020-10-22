@@ -4,6 +4,7 @@
  * [Effective java](https://github.com/leeyohan93/TIL/blob/master/java/Effective-java.md)
  * [지네릭스(Generics)](https://github.com/leeyohan93/TIL/blob/master/java/Generics.md)
  * [TDD-QnA](https://github.com/leeyohan93/TIL/blob/master/java/tdd/QnA.md)
+ * [CQRS](https://github.com/leeyohan93/TIL/blob/master/java/CQRS.md)
 
 ## Spring
 * JPA
