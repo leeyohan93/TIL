@@ -88,11 +88,11 @@
 - 메서드를 호출할 때마다 타입을 대입해야 한다. (대부분 생략 가능)
 
     FruitBox<Fruit> fruitBox = new FruitBox<Fruit>();
-    FruitBox<Fruit> fruitBox = new FruitBox<Fruit>();
+    FruitBox<Apple> appleBox = new FruitBox<Apple>();
 
     ...
 
-    Juicer.<Fruit>makeJuice(fruitBox));       // 타입 생략 가능
+    Juicer.<Fruit>makeJuice(fruitBox));  // 타입 생략 가능  
     Juicer.<Apple>makeJuice(appleBox));  // 타입 생략 가능
 
     ```java
