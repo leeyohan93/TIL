@@ -87,13 +87,13 @@
 - 클래스의 타입 매개변수 <T>와 메서드의 타입 매개변수 <T>는 별개
 - 메서드를 호출할 때마다 타입을 대입해야 한다. (대부분 생략 가능)
 
-    FruitBox<Fruit> fruitBox = new FruitBox<Fruit>();
-    FruitBox<Apple> appleBox = new FruitBox<Apple>();
+    `FruitBox<Fruit> fruitBox = new FruitBox<Fruit>()`;  
+    `FruitBox<Apple> appleBox = new FruitBox<Apple>()`;
 
     ...
 
-    Juicer.<Fruit>makeJuice(fruitBox));  // 타입 생략 가능  
-    Juicer.<Apple>makeJuice(appleBox));  // 타입 생략 가능
+    `Juicer.<Fruit>makeJuice(fruitBox));`  // 타입 생략 가능  
+    `Juicer.<Apple>makeJuice(appleBox));`  // 타입 생략 가능
 
     ```java
     static <T extends Fruit> Juice makeJuice(FruitBox<T> box) {
