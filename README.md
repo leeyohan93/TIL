@@ -9,6 +9,8 @@
 
 ## Spring
 * [자동 빈 등록 vs 수동 빈 등록](https://github.com/leeyohan93/TIL/blob/master/spring/ManualVsAutoBean.md)
+* Security
+  * [Authentication](https://github.com/leeyohan93/TIL/blob/master/spring/security/Authentication.md)
 * JPA
   * [AttributeConverter](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/AttributeConverter.md)
   * [CascadeType.REMOVE vs orphanRemoval=true](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/CascadeTypeRemoveVsOrphan.md)

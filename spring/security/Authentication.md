@@ -1,12 +1,12 @@
 # 스프링 시큐리티 - 인증 아키텍처
-![](./images/spring_security_%20architecture.png)  
+![](./images/securityarchitecture.png)  
 ## 폼 인증 절차
 - 사용자가 폼 로그인 시 `Authentication`을 implements 한 `UsernamePasswordAuthenticationToken`을 만든다.
 - `AuthenticationManager(ProviderManager)`에 `Authentication`을 인수로 인증 요청을 한다. (반환 타입도 Authentication 타입 )
 - `AuthenticationManager`가 여러 `AuthenticationProvider`를 사용하여 인증을 시도하는데 그 중 `DaoAuthenticationProvider`는 `UserDetailsServivce`를 사용하여 `UserDetails` 를 가져와 인증(패스워드 검증)을 한다.
 
 ### SecurityContextHolder & Authentication  
-![](./images/securitycontextholder.png)
+![](./images/SecurityContextHolder.png)
 - **SecurityContextHolder**
     - 누가 인증 되었는지에 대한 세부 정보를 저장하는 곳
     - SecurityContext를 제공하며 기본적으로 ThreadLocal(한 쓰레드 내에 공유되는 자원) 사용.
