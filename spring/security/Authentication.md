@@ -1,9 +1,13 @@
 # 스프링 시큐리티 - 인증 아키텍처
 ![](./images/securityarchitecture.png)  
-## 폼 인증 절차
-- 사용자가 폼 로그인 시 `Authentication`을 implements 한 `UsernamePasswordAuthenticationToken`을 만든다.
-- `AuthenticationManager(ProviderManager)`에 `Authentication`을 인수로 인증 요청을 한다. (반환 타입도 Authentication 타입 )
-- `AuthenticationManager`가 여러 `AuthenticationProvider`를 사용하여 인증을 시도하는데 그 중 `DaoAuthenticationProvider`는 `UserDetailsServivce`를 사용하여 `UserDetails` 를 가져와 인증(패스워드 검증)을 한다.
+## 인증 절차
+1. 사용자가 아이디 비밀번호로 로그인 요청
+2. `AuthenticationFilter`에서 `UsernamePasswordAuthenticationToken`를 만들어 `AuthenticationManager(ProviderManager)`에게 인증 요청((반환 타입 Authentication 타입)
+3. `AuthenticationManager`는 여러 `AuthenticationProvider`를 사용하여 인증을 시도하는데 그 중 `DaoAuthenticationProvider`는 `UserDetailsServivce`를 사용하여 `UserDetails` 를 가져와 인증(패스워드 검증)을 한다.
+4. `UserDetailsServivce` 에서는 일반적으로 입력받은 비밀번호를 암호화하여 저장된 DB의 비밀번호 암호화 값과 비교하여 인증, 성공 시 인증 된 `UsernamePasswordAuthenticationToken`를 반환
+5. `AuthenticationManager`에서는 `AuthenticationFilter`로 인증 정보를 전달
+6. `AuthenticationFilter`에서 `SecurityContextHolder`에 인증 정보 저장
+
 
 ### SecurityContextHolder & Authentication  
 ![](./images/SecurityContextHolder.png)
