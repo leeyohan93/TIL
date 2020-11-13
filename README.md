@@ -16,6 +16,6 @@
   * [AttributeConverter](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/AttributeConverter.md)
   * [CascadeType.REMOVE vs orphanRemoval=true](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/CascadeTypeRemoveVsOrphan.md)
   * [JPA 조인 전략 - 외부조인 vs 내부조인](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/JpaJoinStrategy.md)
-  * [컬렉션 패치조인 시 페이징](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/컬렉션_패치조인_페이징.md)
+  * [컬렉션 페치조인 시 페이징](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/컬렉션_페치조인_페이징.md)
 ## AWS
 * [AWS 공인 솔루션스 아키텍트 – 어소시에이트](./aws/certified-solutions-architect-associate)
