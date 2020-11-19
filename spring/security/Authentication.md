@@ -2,13 +2,16 @@
 ![](./images/securityarchitecture.png)  
 ## 인증 절차
 1. 사용자가 아이디 비밀번호로 로그인 요청
-2. `AuthenticationFilter`에서 `UsernamePasswordAuthenticationToken`를 만듬.
-3. `AuthenticationManager(ProviderManager)`에게 인증 요청((반환 타입 Authentication 타입)
-4. `AuthenticationManager`는 여러 `AuthenticationProvider`를 사용하여 인증을 시도하는데 그 중 `DaoAuthenticationProvider`는 `UserDetailsServivce`를 사용하여 `UserDetails` 를 가져와 인증(패스워드 검증)을 한다.
-5. `UserDetailsServivce` 에서는 일반적으로 입력받은 비밀번호를 암호화하여 저장된 DB의 비밀번호 암호화 값과 비교하여 인증, 성공 시 인증 된 `UsernamePasswordAuthenticationToken`를 반환
-6. `AuthenticationManager`에서는 `AuthenticationFilter`로 인증 정보를 전달
-7. `AuthenticationFilter`에서 `SecurityContextHolder`에 인증 정보 저장
-
+2. `UsernamePasswordAuthenticationFilter(AuthenticationFilter)`에서 아직 인증되지 않은 `UsernamePasswordAuthenticationToken(Authentication)` 객체를 만듬.  
+3. `ProviderManager(AuthenticationManager)`에게 `Authentication` 인증 요청 (반환 타입도 Authentication 타입)  
+4. `AuthenticationManager`는 여러 `AuthenticationProvider`중 `DaoAuthenticationProvider`에게 인증 요청.  
+5. `DaoAuthenticationProvider`는 `UserDetailsServivce`에 유저 정보 조회를 요청.
+6. `UserDetailsServivce`는 인메모리 DB나 외부 DB 등을 통해 조회한 `UserDetails`를 가져옴.
+7. `DaoAuthenticationProvider` 에게 조회된 `UserDetails` 반환.
+8. `DaoAuthenticationProvider` 에서 `passwordEncoder`로 인증이 되었는가를 처리 후 인증 된 `Authentication` 반환 
+9. 인증된 `Authentication`를 `AuthenticationFilter`에게 반환.
+10. 인증된 `Authentication`를 `SecurityContextHolder`에 저장하고 `AuthenticationSuccessHandle`를 실행. (실패시 AuthenticationFailureHandler 실행)
+/
 
 ### SecurityContextHolder & Authentication  
 ![](./images/SecurityContextHolder.png)
