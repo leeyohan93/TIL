@@ -10,8 +10,8 @@
 7. `DaoAuthenticationProvider` 에게 조회된 `UserDetails` 반환.
 8. `DaoAuthenticationProvider` 에서 `passwordEncoder`로 인증이 되었는가를 처리 후 인증 된 `Authentication` 반환 
 9. 인증된 `Authentication`를 `AuthenticationFilter`에게 반환.
-10. 인증된 `Authentication`를 `SecurityContextHolder`에 저장하고 `AuthenticationSuccessHandle`를 실행. (실패시 AuthenticationFailureHandler 실행)
-/
+10. 인증된 `Authentication`를 `SecurityContextHolder`에 저장하고 `AuthenticationSuccessHandle`를 실행.(실패 시 AuthenticationFailureHandler 실행)
+
 
 ### SecurityContextHolder & Authentication  
 ![](./images/SecurityContextHolder.png)
