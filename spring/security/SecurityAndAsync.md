@@ -51,3 +51,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 ```
 - SecurityContextHolder에서 비동기 적용 시 공유를하지 못하는 이유는 SecurityContextHolder 기본 전략이 ThreadLocal 이기 때문이다.
 - 그러므로 SecurityConfig를 등록할 때 SecurityContextHolder의 전략을 MODE_INHERITABLETHREADLOCAL로 변경하면 SecurityContextHolder 공유가 가능하다.
+
+##참고
+[스프링 시큐리티 - 백기선님](https://www.inflearn.com/course/%EB%B0%B1%EA%B8%B0%EC%84%A0-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0/dashboard)
