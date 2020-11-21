@@ -13,7 +13,7 @@
 * Security
   * [Authentication](https://github.com/leeyohan93/TIL/blob/master/spring/security/Authentication.md)
   * [Filter](https://github.com/leeyohan93/TIL/blob/master/spring/security/Filter.md)
-  * [Security와 @Async](https://github.com/leeyohan93/TIL/blob/master/spring/security/SecurityAndAsync.md)
+  * [@Async(비동기)에서의 SecurityContext 사용](https://github.com/leeyohan93/TIL/blob/master/spring/security/AsyncAndSecurityContext.md)
 * JPA
   * [AttributeConverter](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/AttributeConverter.md)
   * [CascadeType.REMOVE vs orphanRemoval=true](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/CascadeTypeRemoveVsOrphan.md)
