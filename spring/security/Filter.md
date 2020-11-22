@@ -27,6 +27,8 @@
     - 기본적으로 httpSession 에서 SecurityContext 정보를 가져온다. 
   - [HeaderWriterFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/filters/HeaderWriterFilter.md)
     - 응답 헤더에 시큐리티 관련 정보들을 추가해주는 필터.
+  - [CsrfFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/filters/CsrfFilter.md)
+    - Csrf 공격을 방지하는 필터.
   - UsernamePasswordAuthenticationFilter : 인증 처리
   - FilterSecurityInterceptor : 인가 처리, 필터 순서 마지막에 위치함.
   - ExceptionTranslationFilter : 인증, 인가 Exception 처리.
