@@ -1,12 +1,12 @@
-# @Async(비동기)에서의 SecurityContextHolder 사용
+# @Async(비동기)에서의 SecurityContext 사용
 
-## @Async에서 SecurityContextHolder를 통해 인증정보를 가져올 수 있을까?
-- @Async를 사용한 서비스를 호출하는 경우 **쓰레드가 다르기 때문에** SecurityContextHolder를 공유받지 못하며 인증정보를 가져올 수 없다.
+## @Async에서 SecurityContext를 통해 인증정보를 가져올 수 있을까 ?
+- @Async를 사용한 서비스를 호출하는 경우 **쓰레드가 다르기 때문에** SecurityContext를 공유받지 못하며 인증정보를 가져올 수 없다.
 
-## 어떻게 @Async에서 SecurityContextHolder를 공유받아 사용할 수 있을까? 
+## @Async에서 SecurityContext를 공유받아 사용할 수 있는 방법은 ? 
 - Security configure()를 오버라이드할때 SecurityContextHolder 설정에서 자식 쓰레드에도 공유하는 설정을 추가함으로
- @Async를 수행하는 쓰레드에서도 SecurityContextHolder를 공유받을 수 있도록 할 수 있다. 
-  `SecurityContextHolder.setStrategyName(SecurityContextHolder.MODE_INHERITABLETHREADLOCAL);`
+ @Async를 수행하는 쓰레드에서도 SecurityContext를 공유받을 수 있도록 할 수 있다. 
+  `SecurityContext.setStrategyName(SecurityContext.MODE_INHERITABLETHREADLOCAL);`
   
 ## 사용 예시 
 ```java
@@ -41,8 +41,8 @@ public class SecurityLogger {
     }
 }
 ```
-- 위 로직 실행 시 서비스 레이어의 메서드가 비동기(@Async)이기 때문에 SecurityContextHolder를 공유받지 못하며
-공유받지 못한 SecurityContextHolder 내부의 Authentication은 Null 값이기 때문에 NullpointException 이 발생하게 된다.
+- 위 로직 실행 시 서비스 레이어의 메서드가 비동기(@Async)이기 때문에 SecurityContext를 공유받지 못하며
+공유받지 못한 SecurityContext 내부의 Authentication은 Null 값이기 때문에 NullpointException 이 발생하게 된다.
 ```java
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
@@ -50,11 +50,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(final HttpSecurity http) throws Exception {
         // 다른 시큐리티 설정들...
-        SecurityContextHolder.setStrategyName(SecurityContextHolder.MODE_INHERITABLETHREADLOCAL);
+        SecurityContext.setStrategyName(SecurityContext.MODE_INHERITABLETHREADLOCAL);
     }
 }
 ```
-- 비동기 적용 시 SecurityContextHolder를 공유하지 못하는 근본적인 이유는 SecurityContextHolder 기본 접근 전략이 ThreadLocal 이기 때문이다.
+- 비동기 적용 시 SecurityContext를 공유하지 못하는 근본적인 이유는 SecurityContextHolder 기본 접근 전략이 ThreadLocal 이기 때문이다.
 - 그러므로 SecurityConfig를 등록할 때 SecurityContextHolder의 전략을 MODE_INHERITABLETHREADLOCAL로 변경하면 공유가 가능하다.
 
 ## 참고
