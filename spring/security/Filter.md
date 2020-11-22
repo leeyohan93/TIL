@@ -19,12 +19,14 @@
          * the {@link DelegatingFilterProxy} delegates to.
      
   
-## 주요 필터 목록
+## 주요 필터 목록 (기본 순서)
   - [WebAsyncManagerIntegrationFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/filters/WebAsyncManagerIntegrationFilter.md)
     - Spring MVC에서 Async 관련 기능을 사용하여 다른 하위 Thread 에서도 같은 SpringSecurityContext를 공유할 수 있도록 해준다.
   - [SecurityContextPersistenceFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/filters/SecurityContextPersistenceFilter.md)
     - 여러 요청 간에 SecuirtyContext를 공유할 수 있도록 해주는 필터.
     - 기본적으로 httpSession 에서 SecurityContext 정보를 가져온다. 
+  - [HeaderWriterFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/filters/HeaderWriterFilter.md)
+    - 응답 헤더에 시큐리티 관련 정보들을 추가해주는 필터.
   - UsernamePasswordAuthenticationFilter : 인증 처리
   - FilterSecurityInterceptor : 인가 처리, 필터 순서 마지막에 위치함.
   - ExceptionTranslationFilter : 인증, 인가 Exception 처리.
