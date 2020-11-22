@@ -1,7 +1,7 @@
 # @Async(비동기)에서의 SecurityContextHolder 사용
 
 ## @Async에서 SecurityContextHolder를 통해 인증정보를 가져올 수 있을까?
-- @Async를 사용한 서비스를 호출하는 경우 **쓰레드가 다르기 때문에** SecurityContextHolder를 공유받지 못한다.
+- @Async를 사용한 서비스를 호출하는 경우 **쓰레드가 다르기 때문에** SecurityContextHolder를 공유받지 못하며 인증정보를 가져올 수 없다.
 
 ## 어떻게 @Async에서 SecurityContextHolder를 공유받아 사용할 수 있을까? 
 - Security configure()를 오버라이드할때 SecurityContextHolder 설정에서 자식 쓰레드에도 공유하는 설정을 추가함으로
