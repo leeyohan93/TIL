@@ -1,6 +1,6 @@
 # ExceptionTranslationFilter
 
-##ExceptionTranslationFilter란 ?
+## ExceptionTranslationFilter란 ?
 - 인증, 인가 에러 처리를 담당하는 필터
 
 ## 에외 처리 두가지
