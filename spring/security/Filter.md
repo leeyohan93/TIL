@@ -45,7 +45,8 @@
   - AnonymousAuthenticationFilter
     - 인증이 안된 유저를 Anonymous Authentication 을 만들어 넣어주는 필터 (기본으로 만들어 사용할 익명 Authentication 객체 설정 가능)
     - null object pattern, 인증되지 않은 유저를 null이 아닌 anonymous 로 대변한다.
-  - SessionManagementFilter
+  - [SessionManagementFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/SessionManagementFilter.md)
+    - 세션의 보안에 관한 여러가지 일을 하는 필터.
     
     
   - FilterSecurityInterceptor : 인가 처리, 필터 순서 마지막에 위치함.
