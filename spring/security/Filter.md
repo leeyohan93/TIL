@@ -35,6 +35,8 @@
     - 폼 인증 처리 필터.
   - [DefaultLogin/LogoutPageGeneratingFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/DefaultLogin-LogoutPageGeneratingFilter.md)
     - 기본 로그인 폼페이지와 `GET /login` 요청, 로그아웃 폼 페이지와 `GET /logout` 요청을 처리하는 필터.
+  - [BasicAuthenticationFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/BasicAuthenticationFilter.md)
+    - Basic 인증에 대한 처리를 하는 필터. 보안에 취약하기에 반드시 HTTPS를 사용 권장.
   - FilterSecurityInterceptor : 인가 처리, 필터 순서 마지막에 위치함.
   - ExceptionTranslationFilter : 인증, 인가 Exception 처리.
   
