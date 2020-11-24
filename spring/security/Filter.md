@@ -19,7 +19,7 @@
          * the {@link DelegatingFilterProxy} delegates to.
      
   
-## 주요 필터 목록 (기본 순서)
+## 주요 필터 목록 (기본 순서) 
   - [WebAsyncManagerIntegrationFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/filters/WebAsyncManagerIntegrationFilter.md)
     - Spring MVC에서 Async 관련 기능을 사용하여 다른 하위 Thread 에서도 같은 SpringSecurityContext를 공유할 수 있도록 해준다.
   - [SecurityContextPersistenceFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/filters/SecurityContextPersistenceFilter.md)
@@ -37,6 +37,17 @@
     - 기본 로그인 폼페이지와 `GET /login` 요청, 로그아웃 폼 페이지와 `GET /logout` 요청을 처리하는 필터.
   - [BasicAuthenticationFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/BasicAuthenticationFilter.md)
     - Basic 인증에 대한 처리를 하는 필터. 보안에 취약하기에 반드시 HTTPS를 사용 권장.
+  - RequestCacheAwareFilter
+    - 현재 요청과 관련 있는 캐시된 요청이 있는지 찾아서 적용하는 필터. (캐시된 요청이 있다면 해당 캐시된 요청 처리)
+    - referer와 관련, 대시보드 접근 -> 인증필요 -> 로그인페이지 -> 로그인 -> **대시보드** (대시보드로드 가야한다는 요청을 캐싱)
+  - SecurityContextHolderAwareRequestFilter
+    - 시큐리티 관련 서블릿 API를 구현해주는 필터
+  - AnonymousAuthenticationFilter
+    - 인증이 안된 유저를 Anonymous Authentication 을 만들어 넣어주는 필터 (기본으로 만들어 사용할 익명 Authentication 객체 설정 가능)
+    - null object pattern, 인증되지 않은 유저를 null이 아닌 anonymous 로 대변한다.
+  - SessionManagementFilter
+    
+    
   - FilterSecurityInterceptor : 인가 처리, 필터 순서 마지막에 위치함.
   - ExceptionTranslationFilter : 인증, 인가 Exception 처리.
   
