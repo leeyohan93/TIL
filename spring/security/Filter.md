@@ -50,8 +50,38 @@
   - [ExceptionTranslationFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/ExceptionTranslationFilter.md)
     - 인증, 인가 Exception 처리.
   - FilterSecurityInterceptor
-      - HTTP 리소스 시큐리티 처리를 담당하는 필터. AccessDecisionManager를 사용하여 인가를 처리한다.
+     - HTTP 리소스 시큐리티 처리를 담당하는 필터. AccessDecisionManager를 사용하여 인가를 처리한다.
+     - `.hasRole()`를 통해 인가 권한 설정.
+  - RememberMeAuthenticationFilter
+    - 세션이 사라지거나 만료가 되더라도 쿠키 또는 DB를 사용하여 저장된 토큰 기반으로 인증을 지원하는 필터
+    - 기본 설정으로는 쿠키를 사용한다. (key 값에 맞는 input 태그 name으로 checkbox 타입으로 폼 요청시 같이 받아서 사용.)  
+    `<input type="checkbox" name="remember-me`>
+        ```java
+       http.rememberMe()
+                     .userDetailsService(accountService)
+                     .key("remember-me-sample");
+       ```
+
+![](./images/filters.png)
   
+## 커스텀 필터 추가 예시
+- `http.addFilterAfter(new LoggingFilter(), UsernamePasswordAuthenticationFilter.class);`
+
+```java
+public class LoggingFilter extends GenericFilterBean {
+
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
+
+    @Override
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+        StopWatch stopWatch = new StopWatch();
+        stopWatch.start(((HttpServletRequest)request).getRequestURI());
+        chain.doFilter(request, response);
+        stopWatch.stop();
+        logger.info(stopWatch.prettyPrint());
+    }
+}
+```
   
 - 참고
   - [스프링 시큐리티 - 백기선님](https://www.inflearn.com/course/%EB%B0%B1%EA%B8%B0%EC%84%A0-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0/dashboard)
