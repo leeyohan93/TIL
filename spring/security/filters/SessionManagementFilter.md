@@ -12,7 +12,7 @@
 - 동시성 제어: maximumSessions
     - 기본적으로 한 유저의 계정이 무한대로 로그인 할 수있는데 세션 수를 제한할 수 있다.
         ```java
-        // 기본적인 전략 : 최근 로그인한 사람이 세션을 점
+        // 기본적인 전략 : 최근 로그인한 사람이 세션을 점유
         - `http.sessionManagement()
                       .maximumSessions(1);`
     
