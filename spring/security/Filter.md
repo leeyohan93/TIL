@@ -33,9 +33,9 @@
     - 로그아웃 처리를 하는 필터.
   - [UsernamePasswordAuthenticationFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/Authentication.md)
     - 폼 인증 처리 필터.
-  - [DefaultLogin/LogoutPageGeneratingFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/DefaultLogin-LogoutPageGeneratingFilter.md)
+  - [DefaultLogin/LogoutPageGeneratingFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/filters/DefaultLogin-LogoutPageGeneratingFilter.md)
     - 기본 로그인 폼페이지와 `GET /login` 요청, 로그아웃 폼 페이지와 `GET /logout` 요청을 처리하는 필터.
-  - [BasicAuthenticationFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/BasicAuthenticationFilter.md)
+  - [BasicAuthenticationFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/filters/BasicAuthenticationFilter.md)
     - Basic 인증에 대한 처리를 하는 필터. 보안에 취약하기에 반드시 HTTPS를 사용 권장.
   - RequestCacheAwareFilter
     - 현재 요청과 관련 있는 캐시된 요청이 있는지 찾아서 적용하는 필터. (캐시된 요청이 있다면 해당 캐시된 요청 처리)
@@ -45,9 +45,9 @@
   - AnonymousAuthenticationFilter
     - 인증이 안된 유저를 Anonymous Authentication 을 만들어 넣어주는 필터 (기본으로 만들어 사용할 익명 Authentication 객체 설정 가능)
     - null object pattern, 인증되지 않은 유저를 null이 아닌 anonymous 로 대변한다.
-  - [SessionManagementFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/SessionManagementFilter.md)
+  - [SessionManagementFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/filters/SessionManagementFilter.md)
     - 세션의 보안에 관한 여러가지 일을 하는 필터.
-  - [ExceptionTranslationFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/ExceptionTranslationFilter.md)
+  - [ExceptionTranslationFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/filters/ExceptionTranslationFilter.md)
     - 인증, 인가 Exception 처리.
   - FilterSecurityInterceptor
      - HTTP 리소스 시큐리티 처리를 담당하는 필터. AccessDecisionManager를 사용하여 인가를 처리한다.
