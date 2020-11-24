@@ -11,3 +11,15 @@
 
 - LogoutSuccessHandler
     - SimpleUrlLogoutSuccessHandler
+
+## 필터 설정 예시
+```java
+http.logout()
+        .logoutUrl("/logout")
+        .logoutSuccessUrl("/")
+        .logoutRequestMatcher()
+        .invalidateHttpSession(true)
+        .deleteCookies()
+        .addLogoutHandler()
+        .logoutSuccessHandler();
+```
