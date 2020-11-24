@@ -33,7 +33,8 @@
     - 로그아웃 처리를 하는 필터.
   - [UsernamePasswordAuthenticationFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/Authentication.md)
     - 폼 인증 처리 필터.
-  - UsernamePasswordAuthenticationFilter : 인증 처리
+  - [DefaultLogin/LogoutPageGeneratingFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/DefaultLogin-LogoutPageGeneratingFilter.md)
+    - 기본 로그인 폼페이지와 `GET /login` 요청, 로그아웃 폼 페이지와 `GET /logout` 요청을 처리하는 필터.
   - FilterSecurityInterceptor : 인가 처리, 필터 순서 마지막에 위치함.
   - ExceptionTranslationFilter : 인증, 인가 Exception 처리.
   
