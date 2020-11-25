@@ -15,7 +15,7 @@
   * [Filters](https://github.com/leeyohan93/TIL/blob/master/spring/security/Filter.md)
   * [@Async(비동기)에서의 SecurityContext 사용](https://github.com/leeyohan93/TIL/blob/master/spring/security/AsyncAndSecurityContext.md)
   * [SpringDataSecurity](https://github.com/leeyohan93/TIL/blob/master/spring/security/SpringDataSecurity.md)
-  * [Security 에서 커스텀한 유저 클래스 사](https://github.com/leeyohan93/TIL/blob/master/spring/security/CustomUser.md)
+  * [Security 에서 커스텀한 유저 클래스 사용](https://github.com/leeyohan93/TIL/blob/master/spring/security/CustomUser.md)
 * JPA
   * [AttributeConverter](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/AttributeConverter.md)
   * [CascadeType.REMOVE vs orphanRemoval=true](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/CascadeTypeRemoveVsOrphan.md)
