@@ -5,7 +5,7 @@
 
 ## 주요 기능
 - 세션 변조 방지 전략 설정: sessionFixation
-    - 기본 서블릿 전략: 요청마다 세션아이디를 change 해주는 전략 
+    - 기본 서블릿 전략: 요청마다 세션아이디를 change 해주는 전략. 
     - 따로 설정하지 않는걸 권장.
 - 유효하지 않은 세션을 리다이렉트 시킬 URL 설정
     - `http.sessionManagement().invalidSessionUrl("/login");`
@@ -28,7 +28,7 @@
       http.sessionManagement()
                     .sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED);
       
-      // 세션을 사용하지 않는 전략 (매번 요청마다 로그인을 다시 해야한다) + RequestCacheAwareFilter도 사용 불
+      // 세션을 사용하지 않는 전략 (매번 요청마다 로그인을 다시 해야한다) + RequestCacheAwareFilter도 사용 불가
       http.sessionManagement()
               .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
       ```

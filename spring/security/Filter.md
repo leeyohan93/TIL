@@ -41,9 +41,9 @@
     - 현재 요청과 관련 있는 캐시된 요청이 있는지 찾아서 적용하는 필터. (캐시된 요청이 있다면 해당 캐시된 요청 처리)
     - referer와 관련, 대시보드 접근 -> 인증필요 -> 로그인페이지 -> 로그인 -> **대시보드** (대시보드로드 가야한다는 요청을 캐싱)
   - SecurityContextHolderAwareRequestFilter
-    - 시큐리티 관련 서블릿 API를 구현해주는 필터
+    - 시큐리티 관련 서블릿 API를 구현해주는 필터.
   - AnonymousAuthenticationFilter
-    - 인증이 안된 유저를 Anonymous Authentication 을 만들어 넣어주는 필터 (기본으로 만들어 사용할 익명 Authentication 객체 설정 가능)
+    - 인증이 안된 유저를 Anonymous Authentication 을 만들어 넣어주는 필터. (기본으로 만들어 사용할 익명 Authentication 객체 설정 가능)
     - null object pattern, 인증되지 않은 유저를 null이 아닌 anonymous 로 대변한다.
   - [SessionManagementFilter](https://github.com/leeyohan93/TIL/blob/master/spring/security/filters/SessionManagementFilter.md)
     - 세션의 보안에 관한 여러가지 일을 하는 필터.
@@ -53,7 +53,7 @@
      - HTTP 리소스 시큐리티 처리를 담당하는 필터. AccessDecisionManager를 사용하여 인가를 처리한다.
      - `.hasRole()`를 통해 인가 권한 설정.
   - RememberMeAuthenticationFilter
-    - 세션이 사라지거나 만료가 되더라도 쿠키 또는 DB를 사용하여 저장된 토큰 기반으로 인증을 지원하는 필터
+    - 세션이 사라지거나 만료가 되더라도 쿠키 또는 DB를 사용하여 저장된 토큰 기반으로 인증을 지원하는 필터.
     - 기본 설정으로는 쿠키를 사용한다. (key 값에 맞는 input 태그 name으로 checkbox 타입으로 폼 요청시 같이 받아서 사용.)  
     `<input type="checkbox" name="remember-me`>
         ```java
