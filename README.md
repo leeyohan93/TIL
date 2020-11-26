@@ -11,11 +11,17 @@
 ## Spring
 * [자동 빈 등록 vs 수동 빈 등록](https://github.com/leeyohan93/TIL/blob/master/spring/ManualVsAutoBean.md)
 * Security
-  * [Authentication](https://github.com/leeyohan93/TIL/blob/master/spring/security/Authentication.md)
+  * [커스텀한 User(from DB) 연동 가이드](https://github.com/leeyohan93/TIL/blob/master/spring/security/Guide.md)
+  * [Principal을 커스텀한 User 클래스로 사용하기](https://github.com/leeyohan93/TIL/blob/master/spring/security/CustomUser.md)
+  * [SpringDataSecurity](https://github.com/leeyohan93/TIL/blob/master/spring/security/SpringDataSecurity.md)
   * [Filters](https://github.com/leeyohan93/TIL/blob/master/spring/security/Filter.md)
+  * [Authentication](https://github.com/leeyohan93/TIL/blob/master/spring/security/Authentication.md)
   * [@Async(비동기)에서의 SecurityContext 사용](https://github.com/leeyohan93/TIL/blob/master/spring/security/AsyncAndSecurityContext.md)
+<<<<<<< Updated upstream
   * [SpringDataSecurity](https://github.com/leeyohan93/TIL/blob/master/spring/security/SpringDataSecurity.md)
   * [Security 에서 커스텀한 유저 클래스 사용](https://github.com/leeyohan93/TIL/blob/master/spring/security/CustomUser.md)
+=======
+>>>>>>> Stashed changes
 * JPA
   * [AttributeConverter](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/AttributeConverter.md)
   * [CascadeType.REMOVE vs orphanRemoval=true](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/CascadeTypeRemoveVsOrphan.md)
