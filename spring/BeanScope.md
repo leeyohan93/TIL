@@ -40,5 +40,13 @@ public class SingletoneBean{
 ```
 - 실행될 때마다 반환되는 count는 1이 호출될 것이다.
 
+## 스코프와 프록시
+- 웹 스코프와 같은 빈을 싱글톤 컨테이너처럼 (일반적인 DI 주입으로) 사용하고 싶다면 프록시 설정을 해주어야한다.
+- 예를 들어 request 스코프의 빈일 경우 웹 요청이 있기 전에 빈을 주입하려 한다면 에러가 발생하는데, 이를 방지하기 위해 프록시를 사용하면 된다.  
+- `@Scope(value = "request", proxyMode = ScopedProxyMode.TARGET_CLASS)`
+    - 인터페이스일 경우 `TARGET_CLASS` 대신 `INTERFACES`
+- 프록시 객체는 요청이 오면 그때 내부에서 진짜 빈을 요청하는 위임 로직이 들어있다.
+- 프록시를 사용하는 핵심은 **진짜 객체를 조회를 꼭 필요한 시점까지 지연처리 한다는 점이다**.
+
 ## 참고
 [인프런 - 스프링 핵심 원리 기본편 , 김영한님](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8/dashboard)
