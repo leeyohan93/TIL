@@ -7,6 +7,8 @@
  * [TDD-QnA](https://github.com/leeyohan93/TIL/blob/master/java/tdd/QnA.md)
  * [CQRS](https://github.com/leeyohan93/TIL/blob/master/java/CQRS.md)
  * [일급 객체와 함수형 인터페이스](https://github.com/leeyohan93/TIL/blob/master/java/%EC%9D%BC%EA%B8%89%EA%B0%9D%EC%B2%B4-%ED%95%A8%EC%88%98%ED%98%95%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4.md)
+ * [싱글톤의 LazyHolder 기법](https://github.com/leeyohan93/TIL/blob/master/java/LazyHolder.md)
+ * [Enum 대신 인터페이스로 사용해보기(State 패턴)](https://github.com/leeyohan93/TIL/blob/master/java/State.md)
 
 ## Spring
 * [스프링과 싱글톤 (@Configuration)](https://github.com/leeyohan93/TIL/blob/master/spring/SpringAndSingletone.md)
