@@ -23,7 +23,7 @@
   * [@Async(비동기)에서의 SecurityContext 사용](https://github.com/leeyohan93/TIL/blob/master/spring/security/AsyncAndSecurityContext.md)
 * JPA
   * [AttributeConverter](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/AttributeConverter.md)
-  * [CascadeType.REMOVE vs orphanRemoval=true](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/CascadeTypeRemoveVsOrphan.md)
+  * [부모 객체에서 자식 객체를 관리하고 싶어요. (feat.DDD)](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/CascadeTypeRemoveVsOrphan.md)
   * [JPA 조인 전략 - 외부조인 vs 내부조인](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/JpaJoinStrategy.md)
   * [컬렉션 페치조인 시 페이징](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/컬렉션_페치조인_페이징.md)
   * [페치조인 이란 ? (부제: 페치조인 vs 일반조인)](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/페치조인.md)
