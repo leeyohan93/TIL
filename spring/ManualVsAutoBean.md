@@ -20,6 +20,24 @@
     - 업무 로직은 문제가 발생했을 때 어디가 문제인지 명확하게 잘 들어나지만, 기술 지원 로직은 적용이 잘 되고 있는지 아닌지 조차 파악하기 어려운 경우가 많기 때문.
 - 업무 로직 중 다형성을 적극 활용할 때
     - 만약 내가 의존 관계 주입으로 여러 개의 빈을 조회하여 사용하고 싶을 경우 사용할 수 있다.
+        - 의존관계를 주입받아 사용하는 방법은 `Map<String, MovingPolicy)` 나 `List<MovingPolicy` 로 주입 받아 사용하면된다.
+    - 이런 경우 수동 빈 들과 등록한 설정파일(`XXXConfig`)는 특정 패키지에 같이 묶어두는게 좋다.
+    ```java
+    @Configuration
+    public class MovingPolicyConfig {
+      
+      @Bean
+      public MovingPolicy defaultMovingPolicy() {
+          return new DefaultMovingPolicy();
+      }
+  
+      @Bean
+      public MovingPolicy randomMovingPolicy() {
+          return new RandomMovingPolicy();
+      }
+    
+  }
+    ```
     
 ## 결론
 - 스프링 부트가 아니라 내가 기본적인 업무로직이 아닌 기술 지원 객체를 직접 스프링 빈으로 등록한다면 수동으로 등록해서 명확하게 들어내는 것이 좋다.
