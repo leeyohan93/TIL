@@ -13,7 +13,7 @@
 ## Spring
 * [스프링과 싱글톤 (@Configuration)](https://github.com/leeyohan93/TIL/blob/master/spring/SpringAndSingletone.md)
 * [빈 스코프](https://github.com/leeyohan93/TIL/blob/master/spring/BeanScope.md)
-* [자동 빈 등록 vs 수동 빈 등록](https://github.com/leeyohan93/TIL/blob/master/spring/ManualVsAutoBean.md)
+* [수동 빈 등록은 대체 언제 사용하면 좋을까?](https://github.com/leeyohan93/TIL/blob/master/spring/ManualVsAutoBean.md)
 * Security
   * [커스텀한 User(from DB) 연동 가이드](https://github.com/leeyohan93/TIL/blob/master/spring/security/Guide.md)
   * [Principal을 커스텀한 User 클래스로 사용하기](https://github.com/leeyohan93/TIL/blob/master/spring/security/CustomUser.md)
