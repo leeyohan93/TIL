@@ -28,6 +28,7 @@
   * [컬렉션 페치조인 시 페이징](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/컬렉션_페치조인_페이징.md)
   * [페치조인 이란? (부제: 페치조인 vs 일반조인)](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/페치조인.md)
   * [읽기 전용 트랜잭션: 쿼리 성능 최적화](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/TransactinoReadOnly.md)
+  * [JPQL 실행 시 일부 엔티티에 대한 쿼리만 실행된다?](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/JpqlFlush.md)
   
 ## AWS
 * [AWS 공인 솔루션스 아키텍트 – 어소시에이트](./aws/certified-solutions-architect-associate)
