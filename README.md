@@ -16,17 +16,18 @@
 * [수동 빈 등록은 대체 언제 사용하면 좋을까?](https://github.com/leeyohan93/TIL/blob/master/spring/ManualVsAutoBean.md)
 * Security
   * [커스텀한 User(from DB) 연동 가이드](https://github.com/leeyohan93/TIL/blob/master/spring/security/Guide.md)
-  * [Principal을 커스텀한 User 클래스로 사용하기](https://github.com/leeyohan93/TIL/blob/master/spring/security/CustomUser.md)
+  * [Principal 을 커스텀한 User 클래스로 사용하기](https://github.com/leeyohan93/TIL/blob/master/spring/security/CustomUser.md)
   * [SpringDataSecurity](https://github.com/leeyohan93/TIL/blob/master/spring/security/SpringDataSecurity.md)
   * [Filters](https://github.com/leeyohan93/TIL/blob/master/spring/security/Filter.md)
   * [Authentication](https://github.com/leeyohan93/TIL/blob/master/spring/security/Authentication.md)
   * [@Async(비동기)에서의 SecurityContext 사용](https://github.com/leeyohan93/TIL/blob/master/spring/security/AsyncAndSecurityContext.md)
 * JPA
-  * [AttributeConverter](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/AttributeConverter.md)
+  * [Converter: 엔티티의 데이터를 변환해서 데이터베이스 컬럼과 매핑하고 싶어요.](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/AttributeConverter.md)
   * [부모 객체에서 자식 객체를 관리하고 싶어요. (feat.DDD)](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/EntityPersist.md)
   * [JPA 조인 전략 - 외부조인 vs 내부조인](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/JpaJoinStrategy.md)
   * [컬렉션 페치조인 시 페이징](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/컬렉션_페치조인_페이징.md)
-  * [페치조인 이란 ? (부제: 페치조인 vs 일반조인)](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/페치조인.md)
+  * [페치조인 이란? (부제: 페치조인 vs 일반조인)](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/페치조인.md)
+  * [읽기 전용 트랜잭션: 쿼리 성능 최적화](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/TransactinoReadOnly.md)
   
 ## AWS
 * [AWS 공인 솔루션스 아키텍트 – 어소시에이트](./aws/certified-solutions-architect-associate)
