@@ -11,7 +11,7 @@
  
      @Id
      @GeneratedValue
-     private Long lineItemId;
+     private Long id;
  
      @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
      private List<LineItem> lineItems = new ArrayList<>();
@@ -22,7 +22,7 @@ public class LineItem {
 
     @Id
     @GeneratedValue
-    private Long lineItemId;
+    private Long id;
     
     @ManyToOne
     @JoinColumn(name = "order_id")
