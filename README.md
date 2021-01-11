@@ -29,10 +29,17 @@
   * [페치조인 이란? (부제: 페치조인 vs 일반조인)](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/페치조인.md)
   * [@Transaction(readOnly=true): 읽기 전용 트랜잭션이란?](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/TransactinoReadOnly.md)
   * [JPQL 실행 시 일부 엔티티에 대한 쿼리만 실행된다?](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/JpqlFlush.md)
-  
+
+## DDD
+* [부패 방지 계층의 위치](https://github.com/leeyohan93/TIL/blob/master/ddd/anti-corruption-location.md)
+
 ## AWS
 * [AWS 공인 솔루션스 아키텍트 – 어소시에이트](./aws/certified-solutions-architect-associate)
 
 ## 생각정리
 * [일일커밋 - 100일 후기](./thinking/100DailyCommit.md)
+
+## 교육 리뷰
+* 우아한 테크 캠프 pro
+    * [자동차 경주 미션](https://github.com/leeyohan93/TIL/blob/master/woowa-techcamp-pro/racingcar.md)
 
