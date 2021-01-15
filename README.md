@@ -31,7 +31,7 @@
   * [JPQL 실행 시 일부 엔티티에 대한 쿼리만 실행된다?](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/JpqlFlush.md)
 
 ## Database
-*[트랜잭션과 격리성](https://github.com/leeyohan93/TIL/blob/master/database/transactional.md)
+* [트랜잭션과 격리성](https://github.com/leeyohan93/TIL/blob/master/database/transactional.md)
 
 ## DDD
 * [부패 방지 계층의 위치](https://github.com/leeyohan93/TIL/blob/master/ddd/anti-corruption-location.md)
