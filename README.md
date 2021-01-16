@@ -12,6 +12,7 @@
 
 ## Spring
 * [스프링과 싱글톤 (@Configuration)](https://github.com/leeyohan93/TIL/blob/master/spring/SpringAndSingletone.md)
+* [스프링 @Transactional과 트랜잭션 전파](https://github.com/leeyohan93/TIL/blob/master/spring/transactional.md)
 * [빈 스코프](https://github.com/leeyohan93/TIL/blob/master/spring/BeanScope.md)
 * [수동 빈 등록은 대체 언제 사용하면 좋을까?](https://github.com/leeyohan93/TIL/blob/master/spring/ManualVsAutoBean.md)
 * Security
