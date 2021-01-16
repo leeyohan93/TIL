@@ -35,7 +35,7 @@ public class UserService {
 
 ### 문제 원인
 
-원인을 간략하게 정리하자면 외부 메서드(외부 Bean)에서 호출하는 경우에만 프록시가 인터셉트되어 동작하며 프록시에서 @Transcational이 동작하는 것이며 내부(같은 Bean)에서 호출하는 경우에는 프록시가 인터셉트되지 않아 @Transcational이 동작하지 않는 것입니다.
+원인을 간략하게 정리하자면 외부 메서드(외부 Bean)에서 호출하는 경우에만 프록시가 인터셉트된 후 프록시에서 @Transcational이 동작하는 것이며 내부(같은 Bean)에서 호출하는 경우에는 프록시가 인터셉트되지 않아 @Transcational이 동작하지 않는 것입니다.
 
 아래는 [스프링 공식문서](https://docs.spring.io/spring-framework/docs/current/reference/html/data-access.html#transaction-declarative-annotations) 에 기재되어 있는 내용입니다.
 
