@@ -36,7 +36,7 @@
     - 서버의 응답을 캐싱하여 부하 감소
 
 ## Load Balancer
-![](./image/loard-balancer.png)
+![](./image/load-balancer.png)
 
 로드밸런서는 부하분산을 해주는 서비스로 단일 서버가 효율적으로 처리하기에는 요청량이 너무 많기 때문에 사이트에 여러 서버가 필요할 때 가장 일반적으로 사용된다.  
 
@@ -49,4 +49,3 @@
 
 ## 참고
 - [위키백과](https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9D%EC%8B%9C_%EC%84%9C%EB%B2%84#%EA%B3%B5%EA%B0%9C_%ED%94%84%EB%A1%9D%EC%8B%9C)
-- 
