@@ -35,10 +35,11 @@
 * [트랜잭션과 격리성](https://github.com/leeyohan93/TIL/blob/master/database/transactional.md)
 
 ## DDD
-* [부패 방지 계층의 위치](https://github.com/leeyohan93/TIL/blob/master/ddd/anti-corruption-location.md)
+* [부패 방지 계층의 위치(작성중)](https://github.com/leeyohan93/TIL/blob/master/ddd/anti-corruption-location.md)
 
-## AWS
+## Infra
 * [AWS 공인 솔루션스 아키텍트 – 어소시에이트](./aws/certified-solutions-architect-associate)
+* [네트워크 프록시와 로드 밸런서](./infra/NetworkProxy.md)
 
 ## 생각정리
 * [일일커밋 - 100일 후기](./thinking/100DailyCommit.md)
@@ -46,4 +47,6 @@
 ## 교육 리뷰
 * 우아한 테크 캠프 pro
     * [자동차 경주 미션](https://github.com/leeyohan93/TIL/blob/master/woowa-techcamp-pro/racingcar.md)
+    * [로또 미션](https://github.com/leeyohan93/TIL/blob/master/woowa-techcamp-pro/lotto.md)
+    * [JPA 미션](https://github.com/leeyohan93/TIL/blob/master/woowa-techcamp-pro/jwp-jpa.md)
 
