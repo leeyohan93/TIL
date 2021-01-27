@@ -6,12 +6,12 @@
 
 # Contents
 
-##  [출생](https://github.com/leeyohan93/TIL/blob/master/book/%EC%97%98%EB%A0%88%EA%B0%95%ED%8A%B8_%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8/%EC%B6%9C%EC%83%9D.md)
+## [출생](https://github.com/leeyohan93/TIL/blob/master/book/%EC%97%98%EB%A0%88%EA%B0%95%ED%8A%B8_%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8/%EC%B6%9C%EC%83%9D.md)
 - 1.1 -er로 끝나는 이름을 사용하지 마세요  
 - 1.2 생성자 하나를 주 생성자로 만드세요  
 - 1.3 생성자에 코드를 넣지 마세요
 
-## 학습 1/n
+## [학습 1/n](https://github.com/leeyohan93/TIL/blob/master/book/엘레강트_오브젝트/학습1.md)
 - 2.1 가능하면 적게 캡슐화하세요
 - 2.2 최소한 뭔가는 캡슐화하세요
 - 2.3 항상 인터페이스를 사용하세요
