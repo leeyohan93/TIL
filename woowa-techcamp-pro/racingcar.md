@@ -9,23 +9,24 @@
 
 ## 피드백 모음
 
-### Step 3
+### getter와 Response DTO 의 사용에 대한 질문
 ![](./image/racingcar/racingcar1.png)
 
-![](./image/racingcar/racingcar2.png)
-
+### getter를 지양하는 이유
 ![](./image/racingcar/racingcar3.png)
 
-### Step 4
+### Response DTO 사용 팁
+![](./image/racingcar/racingcar2.png)
 
+### 객체의 생성 분리와 객체지향
 ![](./image/racingcar/racingcar4.png)
 
 ![](./image/racingcar/racingcar5.png)
 
-### Step 5
-
+### 표준 예외를 사용하라
 ![](./image/racingcar/racingcar6.png)
 
+### 테스트의 메서드 이름을 한글로 사용하기
 ![](./image/racingcar/racingcar7.png)
 
 

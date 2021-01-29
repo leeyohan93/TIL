@@ -8,12 +8,16 @@
 
 ## 피드백 모음
 
+### 리스트를 불변하게 만드는 방법
 ![](./image/lotto/lotto1.png)
 
+### 오버엔지니어링을 주의하자
 ![](./image/lotto/lotto2.png)
 
+### List가 아닌 Set의 사용
 ![](./image/lotto/lotto3.png)
 
+## 테스트를 위한 코드(생성자)
 ![](./image/lotto/lotto4.png)
 
 
