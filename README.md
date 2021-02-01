@@ -48,8 +48,5 @@
 * [일일커밋 - 100일 후기](./thinking/100DailyCommit.md)
 
 ## 교육 리뷰
-* 우아한 테크 캠프 pro
-    * [자동차 경주 미션](https://github.com/leeyohan93/TIL/blob/master/woowa-techcamp-pro/racingcar.md)
-    * [로또 미션](https://github.com/leeyohan93/TIL/blob/master/woowa-techcamp-pro/lotto.md)
-    * [JPA 미션](https://github.com/leeyohan93/TIL/blob/master/woowa-techcamp-pro/jwp-jpa.md)
+* [우아한 테크 캠프 pro](https://github.com/leeyohan93/TIL/blob/master/woowa-techcamp-pro/README.md)
 
