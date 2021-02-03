@@ -28,7 +28,7 @@
 - Test Double
 - BDD
 
-### 3. [DDD]((https://github.com/leeyohan93/TIL/blob/master/ddd/DDD.md)
+### 3. [DDD](https://github.com/leeyohan93/TIL/blob/master/ddd/DDD.md)
 - 도메인 주도 설계
 - 도메인
 - 바운디드 컨텍스트
@@ -43,8 +43,8 @@
 - 연관관계
 - Auditing
 
-### 5. MySQL 이해하기
-- SQL 쿼리의 동작방식 (명렁어 별, select, from, whwere ..)
+### 5. [MySQL 이해하기](https://github.com/leeyohan93/TIL/blob/master/database/mysql.md) 
+- SQL 쿼리의 동작방식 (명렁어 별, select, from, where ..)
 - DB 최적화 대상
 - RDBM의 블록단위 I/O에 대해
 - Single Block I/O와 Multiblock I/O의 차이점
