@@ -40,8 +40,8 @@
 * [부패 방지 계층의 위치(작성중)](https://github.com/leeyohan93/TIL/blob/master/ddd/anti-corruption-location.md)
 
 ## Infra
-* [AWS 공인 솔루션스 아키텍트 – 어소시에이트](./aws/certified-solutions-architect-associate)
-* [네트워크 프록시와 로드 밸런서](./infra/NetworkProxy.md)
+* [AWS 공인 솔루션스 아키텍트 – 어소시에이트](./infra/aws/certified-solutions-architect-associate)
+* [네트워크 프록시와 로드 밸런서](./infra/network/NetworkProxy.md)
 
 ## Book
 * [엘레강트 오브젝트](./book/엘레강트_오브젝트/README.md)
