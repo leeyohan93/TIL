@@ -63,3 +63,4 @@
 - Single Block I/O와 Multiblock I/O의 차이점
 - 인덱스와 테이블 스캔 방식
 - 인덱스 사용 시 주의점과 설계할때 고려해야될 사항
+- [Mysql DB 엔진 InnoDB의 B+tree에 대하여](https://zorba91.tistory.com/293#recentEntries)
