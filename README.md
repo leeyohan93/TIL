@@ -22,14 +22,15 @@
   * [Filters](https://github.com/leeyohan93/TIL/blob/master/spring/security/Filter.md)
   * [Authentication](https://github.com/leeyohan93/TIL/blob/master/spring/security/Authentication.md)
   * [@Async(비동기)에서의 SecurityContext 사용](https://github.com/leeyohan93/TIL/blob/master/spring/security/AsyncAndSecurityContext.md)
-* JPA
-  * [Converter: 엔티티의 데이터를 변환해서 데이터베이스 컬럼과 매핑하고 싶어요.](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/AttributeConverter.md)
-  * [부모 객체에서 자식 객체를 관리하고 싶어요. (feat.DDD)](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/EntityPersist.md)
-  * [JPA 조인 전략 - 외부조인 vs 내부조인](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/JpaJoinStrategy.md)
-  * [컬렉션 페치조인 시 페이징](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/컬렉션_페치조인_페이징.md)
-  * [페치조인 이란? (부제: 페치조인 vs 일반조인)](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/페치조인.md)
-  * [@Transaction(readOnly=true): 읽기 전용 트랜잭션이란?](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/TransactinoReadOnly.md)
-  * [JPQL 실행 시 일부 엔티티에 대한 쿼리만 실행된다?](https://github.com/leeyohan93/TIL/blob/master/spring/jpa/JpqlFlush.md)
+  
+## JPA
+* [Converter: 엔티티의 데이터를 변환해서 데이터베이스 컬럼과 매핑하고 싶어요.](https://github.com/leeyohan93/TIL/blob/master/jpa/AttributeConverter.md)
+* [부모 객체에서 자식 객체를 관리하고 싶어요. (feat.DDD)](https://github.com/leeyohan93/TIL/blob/master/jpa/EntityPersist.md)
+* [JPA 조인 전략 - 외부조인 vs 내부조인](https://github.com/leeyohan93/TIL/blob/master/jpa/JpaJoinStrategy.md)
+* [컬렉션 페치조인 시 페이징](https://github.com/leeyohan93/TIL/blob/master/jpa/컬렉션_페치조인_페이징.md)
+* [페치조인 이란? (부제: 페치조인 vs 일반조인)](https://github.com/leeyohan93/TIL/blob/master/jpa/페치조인.md)
+* [@Transaction(readOnly=true): 읽기 전용 트랜잭션이란?](https://github.com/leeyohan93/TIL/blob/master/jpa/TransactinoReadOnly.md)
+* [JPQL 실행 시 일부 엔티티에 대한 쿼리만 실행된다?](https://github.com/leeyohan93/TIL/blob/master/jpa/JpqlFlush.md)
 
 ## Database
 * [MySQL 이해하기](https://github.com/leeyohan93/TIL/blob/master/database/mysql.md)
