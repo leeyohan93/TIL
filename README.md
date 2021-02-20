@@ -51,4 +51,4 @@
 * [일일커밋 - 100일 후기](./thinking/100DailyCommit.md)
 
 ## 교육 리뷰
-* [우아한 테크 캠프 pro](https://github.com/leeyohan93/TIL/blob/master/woowa-techcamp-pro/README.md)
+* [우아한 테크 캠프 pro](https://github.com/leeyohan93/TIL/blob/master/education/woowa-techcamp-pro/README.md)
