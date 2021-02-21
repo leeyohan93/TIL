@@ -10,12 +10,12 @@
 - 대용량 데이터에 대해 최적화할 대상을 살펴보고, 서버를 튜닝하는 경험
 
 ## 진행 미션
-### [자동차 경주 - 단위 테스트](https://github.com/leeyohan93/TIL/blob/master/woowa-techcamp-pro/racingcar.md)
-### [로또 - TDD](https://github.com/leeyohan93/TIL/blob/master/woowa-techcamp-pro/lotto.md)
-### [JPA](https://github.com/leeyohan93/TIL/blob/master/woowa-techcamp-pro/jwp-jpa.md)
-### [인수테스트 주도 개발](https://github.com/leeyohan93/TIL/blob/master/woowa-techcamp-pro/atdd-subway-admin.md)
-### [인수테스트 기반 TDD](https://github.com/leeyohan93/TIL/blob/master/woowa-techcamp-pro/atdd-subway-service.md)
-### [레거시 코드 리팩터링](https://github.com/leeyohan93/TIL/blob/master/woowa-techcamp-pro/jwp-refactoring.md)
+### [자동차 경주 - 단위 테스트](https://github.com/leeyohan93/TIL/blob/master/education/woowa-techcamp-pro/racingcar.md)
+### [로또 - TDD](https://github.com/leeyohan93/TIL/blob/master/education/woowa-techcamp-pro/lotto.md)
+### [JPA](https://github.com/leeyohan93/TIL/blob/master/education/woowa-techcamp-pro/jwp-jpa.md)
+### [인수테스트 주도 개발](https://github.com/leeyohan93/TIL/blob/master/education/woowa-techcamp-pro/atdd-subway-admin.md)
+### [인수테스트 기반 TDD](https://github.com/leeyohan93/TIL/blob/master/education/woowa-techcamp-pro/atdd-subway-service.md)
+### [레거시 코드 리팩터링](https://github.com/leeyohan93/TIL/blob/master/education/woowa-techcamp-pro/jwp-refactoring.md)
 
 ## 과정을 통한 배움
 
