@@ -31,6 +31,7 @@
 * [페치조인 이란? (부제: 페치조인 vs 일반조인)](https://github.com/leeyohan93/TIL/blob/master/jpa/페치조인.md)
 * [@Transaction(readOnly=true): 읽기 전용 트랜잭션이란?](https://github.com/leeyohan93/TIL/blob/master/jpa/TransactinoReadOnly.md)
 * [JPQL 실행 시 일부 엔티티에 대한 쿼리만 실행된다?](https://github.com/leeyohan93/TIL/blob/master/jpa/JpqlFlush.md)
+* [다양한 연관관계에서 다(Many)의 요소를 추가할 때 지연로딩이 초기화 될까?](https://github.com/leeyohan93/TIL/blob/master/jpa/지연로딩_초기화.md)
 
 ## Database
 * [MySQL 이해하기](https://github.com/leeyohan93/TIL/blob/master/database/mysql.md)
