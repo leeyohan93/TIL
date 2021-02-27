@@ -53,3 +53,4 @@
 
 ## 교육 리뷰
 * [우아한 테크 캠프 pro](https://github.com/leeyohan93/TIL/blob/master/education/woowa-techcamp-pro/README.md)
+* [모든 개발자를 위한 HTTP 웹 기본 지식](https://github.com/leeyohan93/TIL/blob/master/education/모든_개발자를_위한_HTTP_웹_기본_지식.md)
