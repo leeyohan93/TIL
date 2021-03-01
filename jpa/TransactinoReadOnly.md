@@ -37,7 +37,7 @@ Read 작업의 성능 최적화를 위해 사용되는데 이 글은 JPA와 함�
 - 트랜잭션 밖에서 읽기
     - 트랜잭션 없이 조회하는 방법으로 트랜잭션 자체가 존재하지 않으므로 트랜잭션 커밋과 플러시 또한 호출되지 않는다.
     - JPQL도 트랜잭션 없이 실행하면 플러시를 호출하지 않는다.
-    - `@Transactional(propagation = Propagation,NOT_SUPPORTED)`
+    - `@Transactional(propagation = Propagation.NOT_SUPPORTED)`
 
 ## 결론
 성능 최적화에서는 메모리 최적화와 속도 최적화를 함 적용해주는 것이 좋다.  
