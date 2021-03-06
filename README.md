@@ -1,6 +1,7 @@
 # Today I Learned :) (TIL)
 
 ## Java
+ * [객체지향 프로그래밍](https://github.com/leeyohan93/TIL/blob/master/java/객체지향프로그래밍.md)
  * [좋은 객체지향의 5가지 원칙(SOLID)](https://github.com/leeyohan93/TIL/blob/master/java/좋은객체지향의5가지원칙.md)
  * [Effective java](https://github.com/leeyohan93/TIL/blob/master/java/Effective-java.md)
  * [지네릭스(Generics)](https://github.com/leeyohan93/TIL/blob/master/java/Generics.md)
@@ -11,6 +12,7 @@
  * [Enum 대신 인터페이스로 사용해보기(State 패턴)](https://github.com/leeyohan93/TIL/blob/master/java/State.md)
 
 ## Spring
+* [스프링 AOP](https://github.com/leeyohan93/TIL/blob/master/spring/AOP.md)
 * [스프링과 싱글톤 (@Configuration)](https://github.com/leeyohan93/TIL/blob/master/spring/SpringAndSingletone.md)
 * [스프링 @Transactional과 트랜잭션 전파](https://github.com/leeyohan93/TIL/blob/master/spring/transactional.md)
 * [빈 스코프](https://github.com/leeyohan93/TIL/blob/master/spring/BeanScope.md)
@@ -32,6 +34,7 @@
 * [@Transaction(readOnly=true): 읽기 전용 트랜잭션이란?](https://github.com/leeyohan93/TIL/blob/master/jpa/TransactinoReadOnly.md)
 * [JPQL 실행 시 일부 엔티티에 대한 쿼리만 실행된다?](https://github.com/leeyohan93/TIL/blob/master/jpa/JpqlFlush.md)
 * [다양한 연관관계에서 다(Many)의 요소를 추가할 때 지연로딩이 초기화 될까?](https://github.com/leeyohan93/TIL/blob/master/jpa/지연로딩_초기화.md)
+* [JPA 힌트](https://github.com/leeyohan93/TIL/blob/master/jpa/JPA힌트.md)
 
 ## Database
 * [MySQL 이해하기](https://github.com/leeyohan93/TIL/blob/master/database/mysql.md)
