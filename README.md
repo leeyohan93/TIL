@@ -37,7 +37,7 @@
 * [OSIV (OpenSessionInView)](https://github.com/leeyohan93/TIL/blob/master/jpa/OSIV.md)
 * [JPA 힌트](https://github.com/leeyohan93/TIL/blob/master/jpa/JPA힌트.md)
 * [JPA 1차캐시](https://github.com/leeyohan93/TIL/blob/master/jpa/JPA1차캐시.md)
-* [다양한 연관관계에서 다(Many)의 요소를 추가할 때 지연로딩이 초기화 될까?](https://github.com/leeyohan93/TIL/blob/master/jpa/지연로딩_초기화.md)
+* [영속성컨텍스트](https://github.com/leeyohan93/TIL/blob/master/jpa/영속성컨텍스트.md)
 
 ## Database
 * [MySQL 이해하기](https://github.com/leeyohan93/TIL/blob/master/database/mysql.md)
