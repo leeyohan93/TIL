@@ -1,6 +1,7 @@
 # OSIV (OpenSessionInView)
 
 ![](./image/OSIV.png)
+적합한 그림인지 확인 필요
 
 ## OSIV란
 - OSIV는 클라이언트의 요청이 들어올 때 영속성 컨텍스트를 생성해서 뷰(View)까지 같은 영속성 컨텍스트를 유지한다는 뜻입니다.  
