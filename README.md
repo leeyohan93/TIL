@@ -15,7 +15,7 @@
 * [스프링 vs 스프링 부트](./spring/SpringAndSpringBoot.md)
 * [서블릿](./spring/서블릿.md)
 * [스프링 컨테이너](./spring/스프링_컨테이너.md)
-* [스프링 AOP](./spring/AOP.md)\
+* [스프링 AOP](./spring/AOP.md)
 * [스프링과 싱글톤 (@Configuration)](./spring/SpringAndSingletone.md)
 * [스프링 @Transactional과 트랜잭션 전파](./spring/transactional.md)
 * [빈 스코프](./spring/BeanScope.md)
@@ -55,7 +55,7 @@
 * [네트워크 프록시와 로드 밸런서](./infra/network/NetworkProxy.md)
 
 ## Architecture
-* [CQRS](./Architecture/CQRS.md)
+* [CQRS](architecture/CQRS.md)
 
 ## Book
 * [Effective java](./book/Effective-java.md)
