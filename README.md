@@ -35,7 +35,7 @@
 * [컬렉션 페치조인 시 페이징](./jpa/컬렉션_페치조인_페이징.md)
 * [페치조인 이란? (부제: 페치조인 vs 일반조인)](./jpa/페치조인.md)
 * [@Transaction(readOnly=true): 읽기 전용 트랜잭션이란?](./jpa/TransactinoReadOnly.md)
-* [JPQL 실행 시 일부 엔티티에 대한 쿼리만 실행된다?](./jpa/JpqlFlush.md)
+* [JPQL 실행 시 일부 엔티티에 대한 쿼리만 실행된다?](jpa/JpqlFlushTest.md)
 * [다양한 연관관계에서 다(Many)의 요소를 추가할 때 지연로딩이 초기화 될까?](./jpa/지연로딩_초기화.md)
 * [OSIV (OpenSessionInView)](./jpa/OSIV.md)
 * [JPA 힌트](./jpa/JPA힌트.md)

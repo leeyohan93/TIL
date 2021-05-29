@@ -77,9 +77,14 @@ void JPQL_실행_시_일부_쿼리가_작동하지_않는다() {
 위 테스트는 성공하지만 `Member`에 대한 **업데이트 쿼리는 로그에 발생하지 않았다.**  
 JPQL은 실행 전에 영속성 컨텍스트를 플러쉬하니까 변경 감지(더티 체킹)가 일어나서 업데이트 쿼리가 실행되어야 하는데 왜 쿼리가 로그에 안보이지?     
 이 원인을 찾아보니 JPA의 구현체인 하이버네이트의 공식 문서에 그 답이 있었다.  
-> `prior to executing a JPQL/HQL query that overlaps with the queued entity actions`  
- 
-**결론은 JPQL은 연관된 엔티티에 대해서만 flush가 작동하며 다른 엔티티에는 작동하지 않는다는 것이다.**  
+> 6.1. AUTO flush  
+By default, Hibernate uses the AUTO flush mode which triggers a flush in the following circumstances:
+> - prior to committing a Transaction
+> - prior to executing a JPQL/HQL query that overlaps with the queued entity actions
+> - before executing any native SQL query that has no registered synchronization  
+
+공식 문서에는 하이버네이트의 플러시 모드는 AUTO이며 위와 같이 세가지 상황에서 플러시가 발생한다고 기재되어있다.  
+이 때 두번째 상황을 보고 얻은 결론은 **JPQL은 연관된 엔티티에 대해서만 flush가 작동하며 다른 엔티티에는 작동하지 않는다는 것이다.**  
 
 그 이외에 상황들을 몇개 더 알아보자면
 - 현재 예제에서 `Member`와 관련된 JPQL 실행 시 `Member`의 관련 flush가 발생하여 업데이트 쿼리가 발생한다.
