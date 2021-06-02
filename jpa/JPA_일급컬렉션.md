@@ -197,20 +197,23 @@ public class Member {
 그렇다면 데이터베이스에서 한 명의 **Member**도 속하지 않은 **Team**을 조회하였을때 members 필드는 null 일까요? 정답은 null이 아니다입니다. 
 그 이유는 Members.members 필드를 하이버네이트가 PersistenceBag이라는 List의 래퍼 컬렉션으로 초기화하기 때문입니다.
 
-그렇다면 임베디드 타입 객체의 생성은 하이버네이트에게 맡기면 될까요? 그렇지 않습니다.
-Team 클래스를 생성할 때 임베디드 타입을 생성하지 않는다면 다음과 같은 상황이 올 수 있습니다.
+그렇다면 임베디드 타입 객체의 생성은 하이버네이트에게 맡기면 될까요? 그렇지 않습니다. 
+만약 Team 클래스를 생성할 때 임베디드 타입을 생성하지 않는다면 다음과 같은 상황이 올 수 있습니다.
 
 ```java
-Team team = new Team(); // 임베디드 초기화 하지 않음.
-Team savedTeam = TeamRepository.save(team);
-if(savedTeam.getMembers() == null) {
-    System.out.println("임베디드 타입이 null");
+@Test
+void 임베디드타입_생성을_하이버네이트에게_맡기면_null로_초기화된다 () {
+    Team team = new Team(); // 임베디드 타입을 초기화 하지 않음.
+    Team savedTeam=TeamRepository.save(team);
+    TeamRepository.findById(savedTeam.getId());
+
+    assertThat(savedTeam.getMembers()).isNull();
 }
 ```
 
-해당 로직을 실행해보면 해당 문자열이 출력되게 됩니다. 
-분명 데이터베이스에서 조회하면 team.members는 PersistenceBag으로 초기화되어 null이 아니어야 하는데 왜 null일까요? 
-그 이유는 JPA 1차 캐시에 있습니다. 데이터베이스에서 조회해온 엔티티가 영속성 컨텍스트에 존재한다면 조회해온 엔티티를 교체하지 않고 버리게 됩니다.
+위 테스트는 실패하지 않고 정상적으로 동작합니다.
+분명 데이터베이스에서 조회하면 team.members의 내부는 PersistenceBag으로 초기화되기 때문에 null이 아니어야 하는데 왜 null일까요? 
+그 이유는 JPA 1차 캐시에 있습니다. findById()와 같은 식별자를 통한 조회와 JPQL을 통한 조회는 1차 캐시에 이미 엔티티가 존재한다면 1차 캐시의 객체를 반환하게 되기 때문입니다. 
 
 이에 대한 자세한 설명은 [JPA 1차 캐시 포스팅](https://github.com/leeyohan93/TIL/blob/master/jpa/JPA1%EC%B0%A8%EC%BA%90%EC%8B%9C.md) 에 되어 있습니다.
 
