@@ -29,3 +29,6 @@ REST란 모든 자원(이미지, 동영상, DB 자원)에 고유한 URI를 부�
 - 별도의 장비나 프로토콜이 필요없이 기존의 HTTP 인프라를 이용할 수 있다.
   (HTTP의 모범 사례)
 - server, client를 독립적으로 구현할 수 있다.
+
+## 참고
+- https://brainbackdoor.tistory.com/53
