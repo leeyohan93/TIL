@@ -1,4 +1,4 @@
-# Converter: 엔티티의 데이터를 변환해서 데이터베이스 컬럼과 매핑하고 싶어요.  
+# Converter: 엔티티의 데이터를 변환해서 데이터베이스 컬럼과 매핑하기
 
 ## 요구사항
 - 회원 엔티티의 VIP 여부를 boolean 타입으로 사용하면서 데이터베이스 컬럼에 문자 Y 또는 N으로 저장하고 싶다
@@ -99,5 +99,7 @@ public class LengthConverter implements AttributeConverter<Length, String> {
 
 
 - **밸류 타입의 객체를 `Convert`를 통해 매핑할 경우 꼭 `EqualsAndHashCode`를 오버라이딩 해주어야 한다.**
-    - 오버라이딩 하지 않을 시 나는 그저 엔티티를 select 했을 뿐인데 update 쿼리가 발생하는 현상을 보게 될 것이다.  
+  - 오버라이딩 하지 않을 시 나는 그저 엔티티를 select 했을 뿐인데 update 쿼리가 발생하는 현상을 보게 될 것이다.
+  - 임베디드 타입으로 선언한 객체는 엔티티를 확장한 것이기 때문에 `EqualsAndHashCode`로 객체 비교를 하지 않고 각 필드별로 객체 비교를 하여
+    오버라이딩 하지 않아도 되지만, 컨버터는 객체 자체를 사용하는 것이기 때문에 `EqualsAndHashCode`를 통해 객체 비교를 하기 때문에 꼭 오버라이딩하자.
     [나는 왜 select만 했는데 update 쿼리가 발생할까?](https://jojoldu.tistory.com/536)
