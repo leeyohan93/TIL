@@ -1,4 +1,4 @@
-# @Async(비동기)에서의 SecurityContext 사용
+# @Async(비동기)에서 SecurityContext 사용
 
 ## @Async에서 SecurityContext를 통해 인증정보를 가져올 수 있을까 ?
 - @Async를 사용한 서비스를 호출하는 경우 **쓰레드가 다르기 때문에** SecurityContext를 공유받지 못하며 인증정보를 가져올 수 없다.

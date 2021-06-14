@@ -1,4 +1,4 @@
-# @Transaction(readOnly=true): 읽기 전용 트랜잭션이란?
+# @Transaction(readOnly=true): 읽기 전용 트랜잭션
 
 읽기 전용 트랜잭션은 데이터베이스에서 데이터를 가져와 다른 CUD와 같은 작업을 하지 않는  
 Read 작업의 성능 최적화를 위해 사용되는데 이 글은 JPA와 함께 사용할 때의 설명입니다.

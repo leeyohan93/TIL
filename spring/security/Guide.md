@@ -1,4 +1,4 @@
-## 커스텀한 User(from DB) 연동 가이드 
+## Custom User(from DB) 연동 가이드 
 
 ## PasswordEncoder 빈 등록
 - 비밀번호는 반드시 인코딩해서 저장해야하며 스프링 시큐리티가 bcrypt 타입의 PasswordEndoer를 기본으로 제공한다. 
