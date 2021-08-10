@@ -51,10 +51,11 @@
 ## 와일드 카드 <?>
 
 - 하나의 참조 변수로 대입된 타입이 다른 객체를 참조 가능하게 한다.
-
+    ```
     ArrayList<? extends Product> list = new ArrayList<Tv>();    //  OK  
-    ArrayList<? extends Product> list = new ArrayList<Audio>();    //  OK  
+    ArrayList<? extends Product> list = new ArrayList<Audio>(); //  OK  
     ArrayList<Product> list = new ArrayList<Tv>();    //  에러. 대입된 타입 불일치
+    ```
 
     ```
     <? extends T> 와일드 카드의 상한 제한. T와 그 자손들만 가능
@@ -73,7 +74,7 @@
     }
     
     FruitBox<Apple> appleBox = new FruitBox<>();
-    fruitBox<Fruit> fruitBox = new FruitBox<>();
+    FruitBox<Fruit> fruitBox = new FruitBox<>();
     Jucier.makeJuice(appleBox);
     Jucier.makeJuice(fruitBox);
     ```
