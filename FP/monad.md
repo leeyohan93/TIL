@@ -31,8 +31,8 @@ interface Functor<T> {
     - 값이 없는 케이스 (값이 null 일 때 Optional의 map)
     - 값이 미래에 준비될 것으로 예상되는 케이스
       (비동기 상황에서 동기적인 상황처럼 코딩이 가능함 = 비동기 연산들의 합성이 가능하다)
-- Functor로 바라본 map()의 진정한 의미 =
-  컬렉션의 원소를 순회하는 방법이 아닌 <T> 타입의 Funtor를 <R> 타입의 Funtor로 바꾸는 기능
+- Functor로 바라본 map()의 진정한 의미:  ~~컬렉션의 원소를 순회하는 방법~~  
+  `<T> 타입의 Funtor를 <R> 타입의 Funtor로 바꾸는 기능`
 - List는 단순히 Funtor가 담고 있는 값이 List이다.
 
 ### 4. 그럼 Monad는 대체 뭔데?
