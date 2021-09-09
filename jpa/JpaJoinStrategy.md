@@ -2,22 +2,28 @@
  ```java
  @Entity
  public class Team {
- @Id
-@GeneratedValue 
-private Long id;
- @OneToMany(mappedBy =”team”)
- private List<Member〉 members = new ArrayList<Member>();
+ 
+   @Id
+   @GeneratedValue 
+   private Long id;
+   
+   @OneToMany(mappedBy =”team”)
+   private List<Member〉 members = new ArrayList<Member>();
+}
  ```
 ```java
 @Entity
 public class Member {
-@Id 
-@GeneratedValue 
-private Long id;
-0ManyToOne
-@JoinColumn(name = "TEAM_ID")
-//@JoinColumn(name = "TEAM_ID", nullable = false)
-private Team team;
+
+   @Id 
+   @GeneratedValue 
+   private Long id;
+   
+   @ManyToOne
+   @JoinColumn(name = "TEAM_ID")
+   //@JoinColumn(name = "TEAM_ID", nullable = false)
+   private Team team;
+}   
 ```
 
 ##  JPA 조인 전략과 NULL 제약 조건
