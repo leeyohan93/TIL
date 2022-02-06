@@ -30,7 +30,6 @@
 * [스프링 @Transactional과 트랜잭션 전파](./spring/transactional.md)
 * [빈 스코프](./spring/BeanScope.md)
 * [수동 빈 등록을 사용하는 시점](./spring/ManualVsAutoBean.md)
-
 * Security
   * [Custom User 클래스 사용하기](./spring/security/CustomUser.md)
   * [Custom User(from DB) 연동 가이드](./spring/security/Guide.md)
